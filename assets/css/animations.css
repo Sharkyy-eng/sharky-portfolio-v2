@@ -1,0 +1,72 @@
+/* Fade up on scroll */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Pulsing status dot */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--hi);
+  animation: pulse 2s infinite;
+  flex-shrink: 0;
+}
+
+/* Avatar pulse rings */
+@keyframes ring-pulse {
+  0%   { transform: translate(-50%, -50%) scale(1);    opacity: 0.5; }
+  100% { transform: translate(-50%, -50%) scale(1.55); opacity: 0; }
+}
+
+/* Scroll cue bounce */
+@keyframes bounce-arrow {
+  0%, 100% { transform: rotate(45deg) translate(0, 0); }
+  50%       { transform: rotate(45deg) translate(3px, 3px); }
+}
+
+/* Typewriter cursor blink */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.tw-cursor {
+  animation: blink 0.75s step-end infinite;
+}
+
+/* Staggered children — start hidden, JS adds .visible with delays */
+[data-stagger] > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, border-color 0.2s, box-shadow 0.15s;
+}
+
+[data-stagger] > *.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Skill pill hover */
+.skill-pill:hover {
+  border-color: var(--hi);
+  transform: translateY(-1px);
+}
+
+/* Project card hover */
+.proj-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Sharavanan Mathivanan</title>
+  <meta name="description" content="Engineering and software projects by Sharavanan Mathivanan." />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">SHARKY<span class="logo-dot">.</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <h1>Projects</h1>
+      <p class="page-hero-sub">A collection of engineering and software projects.</p>
+    </div>
+  </section>
+
+  <!-- ── Carousel ─────────────────────────────────────── -->
+  <section class="carousel-section" id="carousel-section">
+    <div class="section-inner">
+      <span class="sec-label">Featured</span>
+      <div class="section-title-row">
+        <div class="sec-title">Highlighted Work</div>
+        <div class="carousel-nav">
+          <button id="prev" aria-label="Previous">←</button>
+          <button id="next" aria-label="Next">→</button>
+        </div>
+      </div>
+      <div class="carousel-outer">
+        <div class="carousel-track" id="carousel-track">
+
+          <div class="card-feat">
+            <div class="card-feat-label">Robotics · Hardware</div>
+            <h3>Autonomous Mobile Robot (AMR v2)</h3>
+            <div class="tech">ESP32 · Custom Chassis · L298N Motor Driver</div>
+            <p>Custom robot chassis with optimized sensor placement; integrated ultrasonic and IMU sensors. PID straight-line control and obstacle avoidance firmware.</p>
+            <div class="tags">
+              <span>ESP32</span><span>Python</span><span>PID Control</span>
+            </div>
+          </div>
+
+          <div class="card-reg">
+            <h3>Vision Mouse</h3>
+            <div class="tech">MediaPipe · Python · OpenCV</div>
+            <p>Eye-tracking powered cursor control with automatic calibration. No manual tuning required.</p>
+            <div class="tags">
+              <span>MediaPipe</span><span>Python</span><span>OpenCV</span>
+            </div>
+            <a href="https://github.com/Sharkyy-eng/vision-mouse-advanced" class="card-feat-link" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+
+          <div class="card-feat" style="background:#16213e;">
+            <div class="card-feat-label">AI · Deep Learning</div>
+            <h3>RT-DETR Object Detector</h3>
+            <div class="tech">PyTorch · Deep Learning · Real-time Inference</div>
+            <p>Real-time detection system utilizing a Transformer-based architecture with model optimization for low-latency inference.</p>
+            <div class="tags">
+              <span>PyTorch</span><span>Deep Learning</span><span>Model Optimization</span>
+            </div>
+            <a href="https://github.com/Sharkyy-eng/rtdetr-object-detector" class="card-feat-link" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+
+          <div class="card-reg">
+            <h3>Autonomous Turtle Egg Collector</h3>
+            <div class="tech">Arduino · SolidWorks · Sensor Integration</div>
+            <p>Autonomous rover for sea turtle egg conservation. Designed mechanical-electrical interface in SolidWorks; integrated ultrasonic and IR line-following sensors.</p>
+            <div class="tags">
+              <span>Arduino</span><span>SolidWorks</span><span>Sensors</span>
+            </div>
+          </div>
+
+          <div class="card-reg">
+            <h3>Weather Collector</h3>
+            <div class="tech">CyberPi · IoT · Sensors</div>
+            <p>IoT weather station collecting temperature, humidity, and atmospheric pressure data with real-time cloud integration.</p>
+            <div class="tags">
+              <span>CyberPi</span><span>IoT</span><span>Python</span>
+            </div>
+            <a href="https://github.com/Sharkyy-eng/weather-collector" class="card-feat-link" target="_blank" rel="noopener">View on GitHub →</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-dots" id="carousel-dots"></div>
+    </div>
+  </section>
+
+  <!-- ── Full Collection ───────────────────────────────── -->
+  <section class="section" id="grid-section">
+    <div class="section-inner">
+      <span class="section-label">All Projects</span>
+      <h2 class="section-title">Full Collection</h2>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="hardware">Hardware</button>
+        <button class="filter-btn" data-filter="software">Software</button>
+        <button class="filter-btn" data-filter="robotics">Robotics</button>
+        <button class="filter-btn" data-filter="in-progress">In Progress</button>
+      </div>
+
+      <div class="proj-grid-full">
+
+        <div class="proj-card" data-category="hardware robotics">
+          <div class="proj-header">
+            <h3 class="proj-title">Autonomous Mobile Robot (AMR v2)</h3>
+            <span class="proj-tech">ESP32 · Custom Chassis · L298N Motor Driver</span>
+          </div>
+          <p class="proj-desc">Custom robot chassis with optimized sensor placement; integrated ultrasonic and IMU sensors. PID straight-line control and obstacle avoidance firmware.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">ESP32</span><span class="proj-tag">Python</span><span class="proj-tag">PID Control</span>
+          </div>
+        </div>
+
+        <div class="proj-card" data-category="software robotics">
+          <div class="proj-header">
+            <h3 class="proj-title">Autonomous Robot</h3>
+            <span class="proj-tech">Python · Computer Vision · Sensor Fusion</span>
+          </div>
+          <p class="proj-desc">Self-navigating system that detects bus stops via computer vision, follows traffic signals, and avoids obstacles.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Python</span><span class="proj-tag">Computer Vision</span><span class="proj-tag">Sensor Fusion</span>
+          </div>
+        </div>
+
+        <div class="proj-card" data-category="hardware robotics">
+          <div class="proj-header">
+            <h3 class="proj-title">Autonomous Turtle Egg Collector</h3>
+            <span class="proj-tech">Arduino · SolidWorks · Sensor Integration</span>
+          </div>
+          <p class="proj-desc">Autonomous rover for sea turtle egg conservation. Designed mechanical-electrical interface in SolidWorks; integrated ultrasonic and IR line-following sensors.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Arduino</span><span class="proj-tag">SolidWorks</span><span class="proj-tag">Sensors</span>
+          </div>
+        </div>
+
+        <div class="proj-card" data-category="software">
+          <div class="proj-header">
+            <h3 class="proj-title">Vision Mouse</h3>
+            <span class="proj-tech">MediaPipe · Python · OpenCV</span>
+          </div>
+          <p class="proj-desc">Eye-tracking powered cursor control using facial landmark detection for hands-free interaction. Automatic calibration — no manual tuning required.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">MediaPipe</span><span class="proj-tag">Python</span><span class="proj-tag">OpenCV</span>
+          </div>
+          <a href="https://github.com/Sharkyy-eng/vision-mouse-advanced" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+
+        <div class="proj-card" data-category="hardware software">
+          <div class="proj-header">
+            <h3 class="proj-title">Weather Collector</h3>
+            <span class="proj-tech">CyberPi · IoT · Sensors</span>
+          </div>
+          <p class="proj-desc">IoT weather station collecting temperature, humidity, and atmospheric pressure data with real-time cloud integration and environmental monitoring.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">CyberPi</span><span class="proj-tag">IoT</span><span class="proj-tag">Python</span>
+          </div>
+          <a href="https://github.com/Sharkyy-eng/weather-collector" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+
+        <div class="proj-card" data-category="software">
+          <div class="proj-header">
+            <h3 class="proj-title">RT-DETR Object Detector</h3>
+            <span class="proj-tech">PyTorch · Deep Learning · Real-time Inference</span>
+          </div>
+          <p class="proj-desc">Real-time detection system utilizing a Transformer-based architecture with model optimization for low-latency inference.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">PyTorch</span><span class="proj-tag">Deep Learning</span><span class="proj-tag">Model Optimization</span>
+          </div>
+          <a href="https://github.com/Sharkyy-eng/rtdetr-object-detector" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+
+        <div class="proj-card" data-category="software robotics">
+          <div class="proj-header">
+            <h3 class="proj-title">Particle Filter Robot Localization</h3>
+            <span class="proj-tech">Python · NumPy · Probabilistic Robotics</span>
+          </div>
+          <p class="proj-desc">Probabilistic positioning simulator using Monte Carlo methods for robot localization in mapped environments.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Python</span><span class="proj-tag">NumPy</span><span class="proj-tag">Algorithm Design</span>
+          </div>
+          <a href="https://github.com/Sharkyy-eng/robot-localization-sim" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+
+        <div class="proj-card" data-category="hardware">
+          <div class="proj-header">
+            <h3 class="proj-title">Rocket Launcher</h3>
+            <span class="proj-tech">SolidWorks · Mechanical Design · Rapid Prototyping</span>
+          </div>
+          <p class="proj-desc">High-precision mechanical Nerf-dart launcher designed and prototyped in under five hours. Achieved 83.7m launch distance with zero electronics.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">SolidWorks</span><span class="proj-tag">Mechanical Design</span><span class="proj-tag">Rapid Prototyping</span>
+          </div>
+        </div>
+
+        <div class="proj-card" data-category="hardware software">
+          <div class="proj-header">
+            <h3 class="proj-title">SAD Light Diffuser</h3>
+            <span class="proj-tech">OnShape · 3D Printing · Embedded Systems</span>
+          </div>
+          <p class="proj-desc">Wellness device combining light therapy with auditory and visual feedback to support mental health through seasonal transitions.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">CAD (OnShape)</span><span class="proj-tag">3D Printing</span><span class="proj-tag">Embedded Systems</span>
+          </div>
+          <a href="https://github.com/Sharkyy-eng/interactive-light-therapy-tree" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+
+        <div class="proj-card" data-category="hardware">
+          <div class="proj-header">
+            <h3 class="proj-title">Gravity Based Water Pump</h3>
+            <span class="proj-tech">CAD · Fluid Dynamics · Sustainable Engineering</span>
+          </div>
+          <p class="proj-desc">Zero-electricity water filtration prototype for power-outage prone communities. Filters harmful ions, salts, and bacteria using only gravity.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">CAD</span><span class="proj-tag">Fluid Dynamics</span><span class="proj-tag">Sustainable Engineering</span>
+          </div>
+        </div>
+
+        <div class="proj-card" data-category="hardware">
+          <div class="proj-header">
+            <h3 class="proj-title">Drone Orientation Identifier</h3>
+            <span class="proj-tech">KiCAD · PCB Design · WS2812B LEDs</span>
+          </div>
+          <p class="proj-desc">Custom PCB with LED arrays providing real-time aerial orientation assistance. Hardware-software integration for live status feedback.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">PCB Design</span><span class="proj-tag">KiCAD</span><span class="proj-tag">WS2812B</span>
+          </div>
+        </div>
+
+        <div class="proj-card" data-category="hardware robotics in-progress">
+          <div class="proj-header">
+            <div class="proj-title-row">
+              <h3 class="proj-title">Fin McMissile</h3>
+              <span class="proj-status-badge">In Progress</span>
+            </div>
+            <span class="proj-tech">Flight Controls · 3D Printing</span>
+          </div>
+          <p class="proj-desc">Advanced aerial platform combining multiple flight technologies and custom manufactured components.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Flight Controls</span><span class="proj-tag">3D Printing</span>
+          </div>
+        </div>
+
+        <div class="proj-card" data-category="hardware software robotics in-progress">
+          <div class="proj-header">
+            <div class="proj-title-row">
+              <h3 class="proj-title">Desk Buddy</h3>
+              <span class="proj-status-badge">In Progress</span>
+            </div>
+            <span class="proj-tech">OpenCV · Behavior Trees · Mechatronics</span>
+          </div>
+          <p class="proj-desc">Interactive desktop companion that monitors study habits using face tracking to detect fatigue and prevent academic burnout.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Behavior Trees</span><span class="proj-tag">OpenCV</span><span class="proj-tag">Mechatronics</span>
+          </div>
+        </div>
+
+        <div class="proj-card" data-category="hardware software in-progress">
+          <div class="proj-header">
+            <div class="proj-title-row">
+              <h3 class="proj-title">Finals Helper</h3>
+              <span class="proj-status-badge">In Progress</span>
+            </div>
+            <span class="proj-tech">ESP32 · Arduino · Sensor Fusion</span>
+          </div>
+          <p class="proj-desc">Portable productivity station optimizing study environments through environmental sensing — tracks light, noise, temperature, and CO₂.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Sensor Fusion</span><span class="proj-tag">IoT</span><span class="proj-tag">ESP32</span>
+          </div>
+        </div>
+
+        <div class="proj-card" data-category="software in-progress">
+          <div class="proj-header">
+            <div class="proj-title-row">
+              <h3 class="proj-title">AI Flappy Bird</h3>
+              <span class="proj-status-badge">In Progress</span>
+            </div>
+            <span class="proj-tech">NEAT · Neural Networks · Game Physics</span>
+          </div>
+          <p class="proj-desc">Evolutionary machine learning project training neural networks through a game environment using the NEAT algorithm.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">NEAT</span><span class="proj-tag">Machine Learning</span><span class="proj-tag">Neural Networks</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-name">Sharavanan Mathivanan</div>
+        <div class="footer-sub">London, Canada · smathiv2@uwo.ca</div>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/Sharkyy-eng" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/sharkyca" class="footer-link" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:smathiv2@uwo.ca" class="footer-link">Email</a>
+      </div>
+    </div>
+    <div class="footer-copy">© 2025 Sharavanan Mathivanan. All rights reserved.</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

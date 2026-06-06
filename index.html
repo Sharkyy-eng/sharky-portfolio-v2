@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sharavanan Mathivanan | Mechatronics &amp; AI Engineer</title>
+  <meta name="description" content="Portfolio of Sharavanan Mathivanan — Mechatronics &amp; AI Systems Engineering student at Western University." />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+  <nav id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">SHARKY<span class="logo-dot">.</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          Open to opportunities
+        </div>
+        <h1 class="hero-name">
+          Sharavanan<br>
+          <span class="name-accent">Mathivanan</span>
+        </h1>
+        <p class="hero-typewriter"><span id="typewriter"></span><span class="tw-cursor">|</span></p>
+        <p class="hero-sub">Building intelligent machines that bridge hardware and software.</p>
+        <div class="hero-cta">
+          <a href="projects.html" class="btn btn-primary">View Projects</a>
+          <a href="assets/Resumes/Sharavanan_CV_Tesla_final.pdf" class="btn btn-secondary" download>Download Resume</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="hero-photo-wrap">
+          <div class="pulse-ring pulse-ring-1"></div>
+          <div class="pulse-ring pulse-ring-2"></div>
+          <div class="pulse-ring pulse-ring-3"></div>
+          <img
+            src="assets/images/profile_bgr.jpg"
+            alt="Sharavanan Mathivanan"
+            class="hero-photo"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          >
+          <div class="hero-photo-fallback">SM</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number" data-target="8" data-suffix="+">8+</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat-sep">|</div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="3" data-suffix="+">3+</span>
+        <span class="stat-label">Years</span>
+      </div>
+      <div class="stat-sep">|</div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="10" data-suffix="+">10+</span>
+        <span class="stat-label">Technologies</span>
+      </div>
+      <div class="stat-sep">|</div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="5" data-suffix="">5</span>
+        <span class="stat-label">Roles</span>
+      </div>
+    </div>
+    <div class="scroll-cue">
+      <span class="scroll-cue-label">Scroll</span>
+      <div class="scroll-cue-arrow"></div>
+    </div>
+  </section>
+
+  <section class="section skills-section">
+    <div class="section-inner">
+      <span class="section-label">Stack</span>
+      <h2 class="section-title">Skills &amp; Tech</h2>
+      <div class="skills-grid" data-stagger>
+        <div class="skill-pill"><span class="skill-dot" style="background:#3572A5"></span>Python</div>
+        <div class="skill-pill"><span class="skill-dot" style="background:#f34b7d"></span>C/C++</div>
+        <div class="skill-pill"><span class="skill-dot" style="background:#b07219"></span>Java</div>
+        <div class="skill-pill"><span class="skill-dot" style="background:#e16737"></span>MATLAB</div>
+        <div class="skill-pill"><span class="skill-dot" style="background:#F7DF1E"></span>JavaScript</div>
+        <div class="skill-pill"><span class="skill-dot" style="background:#E34C26"></span>HTML/CSS</div>
+        <div class="skill-pill"><span class="skill-dot" style="background:#00979D"></span>Arduino</div>
+        <div class="skill-pill"><span class="skill-dot" style="background:#DA2B2B"></span>SolidWorks</div>
+        <div class="skill-pill"><span class="skill-dot" style="background:#FF6F00"></span>TensorFlow</div>
+        <div class="skill-pill"><span class="skill-dot" style="background:#00B4AB"></span>MediaPipe</div>
+        <div class="skill-pill"><span class="skill-dot" style="background:#FCC624"></span>Linux</div>
+        <div class="skill-pill"><span class="skill-dot" style="background:#555555"></span>CAD Design</div>
+        <div class="skill-pill"><span class="skill-dot" style="background:#e85d3a"></span>Computer Vision</div>
+        <div class="skill-pill"><span class="skill-dot" style="background:#2ECC71"></span>PCB Layout</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section exp-section">
+    <div class="section-inner">
+      <span class="section-label">Career</span>
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline" data-stagger>
+
+        <div class="tl-item">
+          <div class="tl-date">Jun 2026 —<br>Present</div>
+          <div class="tl-body">
+            <div class="tl-title">Payload Lead</div>
+            <div class="tl-org">Western Aero Design</div>
+            <ul class="tl-bullets">
+              <li>Lead electrical design and integration of the payload system for the advanced class drone.</li>
+              <li>Design and engineer the payload mounting mechanism, ensuring structural compatibility and reliable deployment.</li>
+              <li>Coordinate with the software lead to integrate payload control into the drone's flight system.</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tl-tag">Electrical Design</span>
+              <span class="tl-tag">PCB Layout</span>
+              <span class="tl-tag">CAD Design</span>
+              <span class="tl-tag">SolidWorks</span>
+              <span class="tl-tag">Systems Integration</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">Jan 2026 —<br>Jun 2026</div>
+          <div class="tl-body">
+            <div class="tl-title">Junior Tricopter Lead</div>
+            <div class="tl-org">Western Aero Design</div>
+            <ul class="tl-bullets">
+              <li>Lead cross-functional team of 5 to design, model, and manufacture UAV structural/mechanical components for SAE competition.</li>
+              <li>Create SolidWorks 3D CAD models, mechanical drawings, and BOMs for manufacturing.</li>
+              <li>Select materials and specify tolerances for 3D-printed and machined parts based on load/weight requirements.</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tl-tag">SolidWorks</span>
+              <span class="tl-tag">CAD Design</span>
+              <span class="tl-tag">3D Printing</span>
+              <span class="tl-tag">Circuit Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">Sep 2025 —<br>Jan 2026</div>
+          <div class="tl-body">
+            <div class="tl-title">Prototyping Engineer</div>
+            <div class="tl-org">Western Aero Design</div>
+            <ul class="tl-bullets">
+              <li>Designed and 3D-printed 10+ mechanical prototypes including mounting brackets, motor housings, and fixtures.</li>
+              <li>Engineered custom PCB layouts and wiring harnesses within one-week deadlines.</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tl-tag">PCB Layout</span>
+              <span class="tl-tag">3D Printing</span>
+              <span class="tl-tag">Soldering</span>
+              <span class="tl-tag">SolidWorks</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">Jan 2026</div>
+          <div class="tl-body">
+            <div class="tl-title">Software Lead — Ri3D</div>
+            <div class="tl-org">WEFIRST Robotics Club</div>
+            <ul class="tl-bullets">
+              <li>Programmed PID control loops and motor configuration for automated mechanism actuation under 72-hour build constraint.</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tl-tag">Java</span>
+              <span class="tl-tag">C++</span>
+              <span class="tl-tag">PID Control</span>
+              <span class="tl-tag">FRC Framework</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">May 2025 —<br>Aug 2025</div>
+          <div class="tl-body">
+            <div class="tl-title">Engineering Intern</div>
+            <div class="tl-org">MAANTT Global Services</div>
+            <ul class="tl-bullets">
+              <li>Developed Python-based monitoring system tracking 50+ concurrent inputs with 90% detection accuracy.</li>
+              <li>Automated reporting workflows; authored technical documentation improving cross-team communication.</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tl-tag">Python</span>
+              <span class="tl-tag">TensorFlow</span>
+              <span class="tl-tag">MediaPipe</span>
+              <span class="tl-tag">Computer Vision</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-date">Mar 2024 —<br>Aug 2024</div>
+          <div class="tl-body">
+            <div class="tl-title">Robot Designer &amp; Trainer</div>
+            <div class="tl-org">MEBOT Robotics</div>
+            <ul class="tl-bullets">
+              <li>Designed and assembled functional robot prototypes from concept through commissioning.</li>
+              <li>Managed project timelines and created training curriculum for students aged 8–15.</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="tl-tag">Robotics</span>
+              <span class="tl-tag">Hardware Design</span>
+              <span class="tl-tag">Curriculum Dev</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section projects-section">
+    <div class="section-inner">
+      <span class="section-label">Work</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="proj-grid" data-stagger>
+
+        <div class="proj-card">
+          <div class="proj-header">
+            <h3 class="proj-title">Autonomous Mobile Robot (AMR v2)</h3>
+            <span class="proj-tech">ESP32 · Custom Chassis · L298N Motor Driver</span>
+          </div>
+          <p class="proj-desc">Custom robot chassis with optimized sensor placement; integrated ultrasonic and IMU sensors. PID straight-line control and obstacle avoidance firmware.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">ESP32</span>
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">PID Control</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-header">
+            <h3 class="proj-title">Vision Mouse</h3>
+            <span class="proj-tech">MediaPipe · Python · OpenCV</span>
+          </div>
+          <p class="proj-desc">Eye-tracking powered cursor control with automatic calibration. No manual tuning required.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">MediaPipe</span>
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">OpenCV</span>
+          </div>
+          <a href="https://github.com/Sharkyy-eng/vision-mouse-advanced" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-header">
+            <h3 class="proj-title">Autonomous Turtle Egg Collector</h3>
+            <span class="proj-tech">Arduino · SolidWorks · Sensor Integration</span>
+          </div>
+          <p class="proj-desc">Designed mechanical-electrical interface in SolidWorks for a rugged outdoor vehicle. Integrated ultrasonic and IR line-following sensors.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Arduino</span>
+            <span class="proj-tag">SolidWorks</span>
+            <span class="proj-tag">Sensors</span>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-header">
+            <h3 class="proj-title">Weather Collector</h3>
+            <span class="proj-tech">CyberPi · IoT · Sensors</span>
+          </div>
+          <p class="proj-desc">IoT weather station with real-time sensor data, cloud integration, and environmental monitoring.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">CyberPi</span>
+            <span class="proj-tag">IoT</span>
+          </div>
+          <a href="https://github.com/Sharkyy-eng/weather-collector" class="proj-link" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+
+      </div>
+      <div class="proj-more">
+        <a href="projects.html" class="btn btn-outline">+ More on Projects page</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section certs-section">
+    <div class="section-inner">
+      <span class="section-label">Certifications</span>
+      <div class="certs-row" data-stagger>
+        <div class="cert-card">
+          <div class="cert-name">CSWA — Certified SolidWorks Associate</div>
+          <div class="cert-issuer">Dassault Systèmes</div>
+          <div class="cert-year">2025</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name">MATLAB Onramp</div>
+          <div class="cert-issuer">MathWorks</div>
+          <div class="cert-year">2024</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-name">Sharavanan Mathivanan</div>
+        <div class="footer-sub">London, Canada · smathiv2@uwo.ca</div>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/Sharkyy-eng" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/sharkyca" class="footer-link" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:smathiv2@uwo.ca" class="footer-link">Email</a>
+      </div>
+    </div>
+    <div class="footer-copy">© 2025 Sharavanan Mathivanan. All rights reserved.</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
